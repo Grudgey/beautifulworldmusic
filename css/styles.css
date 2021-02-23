@@ -1,0 +1,363 @@
+html, body, section {
+     font-family: 'Nunito Sans', sans-serif;
+     margin: 0;
+     padding: 0;
+     line-height: 1.3;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+p.white, label.white {
+	font-weight: 200;
+}
+
+.sidebar {
+     background-color: white;
+     background-color: rgba(255, 255, 255, 0.9);
+     position: absolute;
+     left: -324px;
+     height: 100vh;
+     padding-top: 150px;
+     transition: left 400ms cubic-bezier(0.6, 0.05, 0.40, 0.91);
+     width: 324px;
+}
+
+.sidebar.active {
+     left: 0;
+}
+
+.sidebar ul {
+     border-top: 1px solid #484848;
+     list-style-type: none;
+     padding: 0;
+}
+
+.sidebar li {
+     border-bottom: 1px solid #484848;
+     padding: 10px 0 10px 0;
+}
+
+.sidebar a {
+     color: #484848;
+     font-size: 3rem;
+     font-weight: 800;
+     text-decoration: none;
+}
+
+.sidebar .active {
+     color: black;
+}
+
+.hamburger {
+     transition: all 400ms cubic-bezier(0.6, 0.05, 0.40, 0.91);
+}
+
+.hamburger div {
+     background-color: black;
+     height: 2px;
+     margin-bottom: 14px;
+     width: 80px;
+     transition: transform 400ms cubic-bezier(0.6, 0.05, 0.40, 0.91);
+}
+
+.hamburger.active {
+     margin-left: 170px;
+}
+
+.hamburger.active .hamburger-top {
+     transform: translateY(16px) rotate(-135deg) scale(0.7);
+}
+
+.hamburger.active .hamburger-middle {
+     transform: scale(0);
+}
+
+.hamburger.active .hamburger-bottom {
+     transform: translateY(-16px) rotate(-45deg) scale(0.7);
+}
+
+h1 {
+     color: white;
+     text-align: right;
+     font-weight: 800;
+     font-size: 4.2vw;
+     line-height: 0.8;
+     padding-right: 5%;
+     border-right: 0.1em solid;
+}
+
+.s1 {
+     height: 100vh;
+}
+
+.s1-r1 {
+     height: 10vh;
+}
+
+.s1-r2 {
+     background-image: url("../images/bg-crowd.jpg");
+     background-size: cover;
+     background-color: #4486CA;
+     background-blend-mode: multiply;
+     height: 40vh;
+}
+
+.s1-r3 {
+     height: 50vh;
+}
+
+.content-row {
+     padding: 100px 0 100px 0;
+}
+
+h2 {
+     text-align: left;
+     color: #484848;
+     font-weight: 300;
+     border-bottom: solid 2px #484848;
+     width: fit-content;
+}
+
+.underline {
+     color: rgba(255, 255, 255, 0.0);
+     border-bottom: solid 2px #484848;
+     width: 100%;
+}
+
+.underline.white {
+     border-bottom: solid 1px white;
+}
+
+.white h2 {
+     border-bottom: solid 1px white;
+     color: white;
+}
+
+hr {
+     opacity: 1;
+}
+
+.fa-chevron-circle-down {
+     color: #F94E4C;
+     font-size: 3rem;
+}
+
+.s2 {
+     background-image: url("../images/bg-crowd.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: #4486CA;
+     background-blend-mode: multiply;
+}
+
+.s2 .row {
+     padding-top: 50px;
+}
+
+p {
+     color: rgba(0, 0, 0, .80);
+     width: 70%;
+}
+
+.s2 p, .s2 label, .s2 a {
+     color: white;
+     text-decoration: none;
+}
+
+.s2 a:hover {
+     color: #212529;
+}
+
+#footer {
+     background-color: #212529;
+}
+
+#footer p {
+     color: white;
+     margin: 0;
+     text-align: center;
+     width: 100%;
+}
+
+.logo-wrapper {
+     position: relative;
+}
+
+.logo {
+     height: 250px;
+     position: absolute;
+     left: 10%;
+     transform: translateY(-65%);
+}
+
+.red-circle {
+     position: absolute;
+     background-color: #F94E4C;
+     border-radius: 50%;
+     mix-blend-mode: multiply;
+     transform: translateY(-55%);
+     width: 450px;
+     height: 450px;
+}
+
+.mailchimp-form {
+     text-align: left;
+     width: 25%;
+}
+
+.play-wrapper {
+     height: fit-content;
+     position: relative;
+     width: fit-content;
+}
+
+.play {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 4rem;
+}
+
+.play:hover {
+     cursor: pointer;
+}
+
+.fa-play, .fa-pause {
+     color: white;
+     opacity: 0.9;
+}
+
+.carousel-row {
+     background-color: rgba(0, 0, 0, .60);
+     background-blend-mode: multiply;
+}
+
+.carousel h3 {
+     border: 0;
+     font-weight: 200;
+     color: white;
+	letter-spacing: 3px;
+	width: fit-content;
+}
+
+.carousel p {
+	text-align: left;
+}
+
+.carousel i {
+	color: white;
+	font-size: 2rem;
+}
+
+.carousel-container {
+     margin: 0;
+     padding: 60px 0;
+}
+
+.carousel {
+     overflow: hidden;
+     padding: 0 0 100px 0;
+     width: 100vw;
+}
+
+.carousel>.carousel-content {
+     display: flex;
+     flex-direction: row;
+     height: 100%;
+     transform: translate3d(0, 0, 0);
+     transition: transform 600ms;
+}
+
+.carousel>nav {
+     bottom: 0;
+     left: 0;
+     position: absolute;
+     text-align: center;
+     width: 100vw;
+     z-index: 1;
+}
+
+.carousel>nav a {
+     color: white;
+     font-size: 2rem;
+     opacity: .3;
+     text-decoration: none;
+}
+
+.carousel>nav a:hover {
+     opacity: .5;
+}
+
+.carousel>nav a.current {
+     opacity: 1;
+}
+
+.carousel .slide {
+     flex-shrink: 0;
+     line-height: 1.4;
+     text-align: center;
+     width: 100vw;
+}
+
+@media (max-width: 992px) {
+     h1 {
+          font-size: 3.5rem;
+     }
+
+     h2 {
+          font-size: 2.8rem;
+     }
+
+     p {
+          font-size: 2.3rem;
+          margin-bottom: 0;
+          width: 100%;
+     }
+
+	.slide img {
+		width: 100%;
+	}
+
+     .s1-r2 {
+          height: 20vh;
+     }
+
+     .s1-r3 {
+          height: 70vh;
+     }
+
+     .fa-chevron-circle-down {
+          font-size: 6rem;
+     }
+
+     .mailchimp-form {
+          text-align: left;
+          width: 60%;
+          font-size: 2.3rem;
+     }
+
+     .mailchimp-form button, .mailchimp-form input {
+          font-size: 2.3rem;
+     }
+
+     .play {
+          font-size: 5rem;
+     }
+
+     .music-section p {
+          width: auto;
+          text-align: left;
+     }
+
+     h4 {
+          font-size: 2.3rem;
+     }
+
+	.carousel h3 {
+	    font-size: 4rem;
+	}
+
+}
