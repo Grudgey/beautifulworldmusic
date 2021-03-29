@@ -1,6 +1,7 @@
 
 const year = new Date();
-document.getElementById("copyright-year").innerHTML = "© BEAUTIFUL WORLD MUSIC " + year.getFullYear();
+document.getElementById("copyright-year").innerHTML += ` Beautiful World Music ${year.getFullYear()}`;
+
 
 
 var sidebar = document.querySelector(".sidebar");

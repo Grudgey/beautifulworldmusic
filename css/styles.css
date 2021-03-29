@@ -109,7 +109,7 @@ h1 {
 }
 
 .content-row {
-     padding: 30px 0 50px 0;
+     padding: 80px 0 0 0;
 }
 
 h2 {
@@ -152,8 +152,8 @@ hr {
      background-blend-mode: multiply;
 }
 
-.s2 .row {
-     padding-top: 30px;
+.s2 .r1, .s2 .r2 {
+  padding: 5% 0 5% 0;
 }
 
 p {
@@ -172,12 +172,12 @@ p {
 
 #footer {
      background-color: #212529;
+     padding: 1% 0 1% 0;
 }
 
-#footer p {
-     color: white;
+#footer p, #footer label {
+     color: #959595;
      margin: 0;
-     text-align: center;
      width: 100%;
 }
 
